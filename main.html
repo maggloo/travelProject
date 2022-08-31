@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <title>Pero Travel</title>
+    <style>
+        @font-face {
+        font-family: 'mr_KindlyJasmineG';
+        src: url('../fonts/mr_kindlyjasmineg.eot'); /* IE 9 Compatibility Mode */
+        src: url('../fonts/mr_kindlyjasmineg.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+            url('../fonts/mr_kindlyjasmineg.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/mr_kindlyjasmineg.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+            url('../fonts/mr_kindlyjasmineg.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/mr_kindlyjasmineg.svg#mr_kindlyjasmineg') format('svg'); /* Chrome < 4, Legacy iOS */
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0px;    
+            font-size: 100%;
+        }
+
+
+        .starting-header {
+            height: 100%;
+            color: white;
+            background-image: url(pics/background.jpg);
+            background-size: cover;
+        }
+
+        header {
+            padding-top: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 10%;
+        }
+
+        .menu {      
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+            white-space: nowrap;
+        }
+
+        .headline {
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Montserrat', sans-serif;          
+        }
+
+        .head {
+            display: flex;
+            flex-direction: column;          
+        }
+
+        .head div:first-of-type {
+            font-size: 5rem;
+            text-transform: uppercase;
+            position: relative;            
+        }
+
+        .head div:first-of-type::after {
+            content: 'вместе с';
+            display: inline-block;
+            font-family:  'mr_KindlyJasmineG';
+            text-transform: lowercase;
+            font-size: 4.5rem;
+            color: rgba(255, 199, 0, 1);
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            transform: translate(-25%, 50%);
+            -webkit-text-stroke: 1px black;   
+            white-space: nowrap;
+        }
+
+        .head div:last-of-type {
+            font-family: sans-serif;
+            font-size: 7rem;
+            font-weight: 900;
+            white-space: nowrap;        
+            color: transparent;
+            -webkit-text-stroke: 1px white;   
+            text-transform: uppercase;   
+            display: flex;
+            
+        }
+        
+        /* .head span {
+            font-family: 'mr_KindlyJasmineG';
+        } */
+
+        .head div, .head span {
+            width: inherit;
+        }
+
+        .social {
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section class = "starting-header">
+        <header>
+            <img src="pics/logo.svg">
+            <div class="menu">
+                <div>Главная</div>
+                <div>Экскурсии</div>
+                <div>Личный кабинет</div>
+            </div>
+        </header>
+        <div class = "headline">
+            <div class="head">
+                <div>Путешевствуй</div>
+                <div>Pero Travel</div>   
+            </div>
+    
+            <div class = "social">
+                <img>
+                <img>
+                <img>
+            </div>
+        </div>
+        <button id="to-tours">К экскурсиям</button>
+    </section>
+</body>
+</html>
